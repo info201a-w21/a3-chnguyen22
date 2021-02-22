@@ -54,3 +54,11 @@ ggplot(data = incarceration_trends_filtered) +
 ggplot(data = incarceration_trends_filtered) +
   geom_point(mapping = aes(x = year, y = recent_black_ratio)) + ylim(0.0, 0.02)
 
+ggplot(data = incarceration_trends_filtered) +
+  geom_point(mapping = aes(x = year, y = recent_native_ratio)) + ylim(0.0, 0.01)
+
+ggplot(data = incarceration_trends_filtered) +
+  geom_point(mapping = aes(x = year, y = recent_latinx_ratio)) + ylim(0.0, 0.002)
+
+ggplot(data = incarceration_trends_filtered) +
+  geom_point(mapping = aes(x = year, y = recent_white_ratio)) + ylim(0.0, 0.002)
