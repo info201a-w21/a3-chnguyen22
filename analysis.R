@@ -1,16 +1,25 @@
-library(dplyr)
+library(tidyverse)
 
 incarceration_trends <- read.csv("incarceration_trends.csv")
 incarceration_trends_jurisdiction <- read.csv("incarceration_trends_jail_jurisdiction.csv")
 
-incarceration_trends <- mutate(incarceration_trends, 
-                               aapi_ratio = aapi_jail_pop/aapi_pop_15to64)
+incarceration_trends <- incarceration_trends %>%
+  mutate(aapi_ratio = aapi_jail_pop/aapi_pop_15to64, na.rm = T)
+
 recent_aapi_ratio <- incarceration_trends %>%
   filter(year == max(year)) %>%
-  filter(county_name = "King County")
-  pull(total_pop)
+  filter(county_name == "King County")
+  pull(aapi_ratio)
 
-highest_divsion <- incarceration_trends %>%
+  
+
+  
+  
+  
+  
+  
+  
+  highest_divsion <- incarceration_trends %>%
   filter(division == max(division, na.rm = T)) %>%
   pull(division)
 
