@@ -1,7 +1,14 @@
 library(dplyr)
 
 incarceration_trends <- read.csv("incarceration_trends.csv")
-View(incarceration_trends)
+incarceration_trends_jurisdiction <- read.csv("incarceration_trends_jail_jurisdiction.csv")
+
+incarceration_trends <- mutate(incarceration_trends, 
+                               aapi_ratio = aapi_jail_pop/aapi_pop_15to64)
+recent_aapi_ratio <- incarceration_trends %>%
+  filter(year == max(year)) %>%
+  filter(county_name = "King County")
+  pull(total_pop)
 
 highest_divsion <- incarceration_trends %>%
   filter(division == max(division, na.rm = T)) %>%
@@ -15,5 +22,3 @@ highest_area <- incarceration_trends %>%
   filter(V15 == max(V15)) %>%
   pull(V15)
 
-View(incarceration_trends_jail_jurisdiction)
-View(incarceration_trends)
