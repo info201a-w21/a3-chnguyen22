@@ -3,10 +3,12 @@ library(dplyr)
 incarceration_trends <- read.csv("incarceration_trends.csv")
 View(incarceration_trends)
 
-highest_division <- incarceration_trends %>%
-  group_by(division) %>%
-  filter(division == max(division)) %>%
+highest_divsion <- incarceration_trends %>%
+  filter(division == max(division, na.rm = T)) %>%
   pull(division)
+
+aapi_men_pop <- incarceration_trends %>%
+  filter()
 
 highest_area <- incarceration_trends %>%
   group_by(V15) %>%
