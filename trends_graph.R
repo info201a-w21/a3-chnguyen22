@@ -57,5 +57,6 @@ trends_graph <- ggplot(data = incarceration_trends_filtered) +
   geom_line(mapping = aes(x = year, y = recent_aapi_ratio, color = "AAPI Ratio")) +
   ggtitle("Changes in Incarceration Rates Among Racial Groups", subtitle = "From 1990 to 2018") +
   xlab('Year') +
-  ylab('Ratio of Incarcerated Racial Population to Total Racial Population') 
-  
+  ylab('Ratio of Incarcerated Racial Population to Total Racial Population') +
+  scale_color_discrete(name = "Ratios") +
+  theme(plot.title = element_text(size = 15, face = "bold"))

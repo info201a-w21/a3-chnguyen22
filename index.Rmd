@@ -29,6 +29,8 @@ These ratios have fluctuated slightly over the last 30 years, but they remain li
 
 In attempts to adjust for confounding variables, I pulled  ratios of the incarcerated racial group in King County to the total incarcerated population in each given year. The following ratios were `r analysis$recent_ratio_aapi_of_jail_pop` for AAPI's in King County, `r analysis$recent_ratio_black_of_jail_pop` for the Black community, `r analysis$recent_ratio_latinx_of_jail_pop` for the Latinx community, `r analysis$recent_ratio_native_of_jail_pop` for Indigenous communities, and `r analysis$recent_ratio_white_of_jail_pop` for the White population. We see that the some ratios level out and become closer to that of other communities, but still, there are drastic disparities across other racial groups that we cannot assume are naturally occurring. Marginalization, racial profiling, and unequal distribution of resources are just a few things that contribute to these varying ratios. With new information being shared about these issues, it is imperative that our society, from its leadership to its citizens, truly recognizes them as issues and works to address them. 
 
+--- 
+
 
 ```{r echo = F}
 trends_graph
