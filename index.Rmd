@@ -6,7 +6,7 @@ output: html_document
 ```{r setup, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source('analysis.R')
-source('')
+source('trends_graph.R')
 source('')
 source('')
 ```

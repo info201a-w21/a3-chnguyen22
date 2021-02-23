@@ -49,6 +49,8 @@ recent_native_ratio <- incarceration_trends %>%
   pull(native_ratio)  
 
 
+
+
 incarceration_trends <- incarceration_trends %>%
   mutate(aapi_of_jail_pop = aapi_jail_pop/total_jail_pop, na.rm = T)
 
