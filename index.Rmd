@@ -19,9 +19,13 @@ King County was selected for this project for its  diversity. While it varies de
 ---
 
 ### Summary Information:
-To start, I analyzed ratios of incarcerated populations of a given racial demographic to their overall population in King County in the year 2018. I wanted to see how inconsistent the proportion of incarcerated people would be across different racial groups in a fairly diverse county, one that preaches its progressiveness. In doing so, I found that among Asian Americans and Pacific Islanders, the ratio was `r analysis$recent_aapi_ratio`.  
+To start, I analyzed ratios of incarcerated populations of a given racial demographic to their overall population in King County in the year 2018. I wanted to see how inconsistent the proportion of incarcerated people would be across different racial groups in a fairly diverse county, especially one that preaches its progressiveness. In doing so, I found that among Asian Americans and Pacific Islanders, 
 
 
----
+
+```{r echo = F}
+trends_graph
+
+```
 
 
