@@ -31,11 +31,15 @@ In attempts to adjust for confounding variables, I pulled  ratios of the incarce
 
 --- 
 
-
 ```{r echo = F}
 trends_graph
-
 ```
+
+This graph shows the changes in ratios of an incarcerated racial group to its entire population in King County. It's fair to assume none of the trend lines will ever be straight across, but it's interesting to see how they change over the years. Some linger in the same range while others show peaks that coincide with that of other racial groups. By showcasing the trend lines on one graph, we can see how they differ from each other and how they change over time. It raises questions of why some peak and others don't, and what events those peaks align with. These are questions that have yet to be answered by data, and perhaps with further research, we can come to an answer. 
+
+For example, the ratios for AAPI and White communities are generally stagnant and are consistent throughout the years. However, mng Black, Indigenous, and Latinx communities, those ratios are significantly higher and experience peaks together around the mid-1990's, early 2000's, and early 2010's. These peaks may coincide with times of economic distress or general disorder. Again, further research must be conducted, but we hope to find answers to illuminate these areas of question. 
+
+--- 
 
 
 
