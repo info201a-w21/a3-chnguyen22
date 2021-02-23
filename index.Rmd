@@ -1,5 +1,5 @@
 ---
-title: "Incarceration Across the King County, Washington"
+title: "Incarceration Across King County, Washington"
 output: html_document
 ---
 
