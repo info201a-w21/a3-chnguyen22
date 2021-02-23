@@ -48,7 +48,7 @@ recent_native_ratio <- incarceration_trends_filtered %>%
   pull(native_ratio)  
 
 
-ggplot(data = incarceration_trends_filtered) +
+trends_graph <- ggplot(data = incarceration_trends_filtered) +
   geom_line(mapping = aes(x = year, y = recent_white_ratio, color = "White Ratio")) + 
                           xlim (1990, 2020) + ylim(0.0, 0.015) +
   geom_line(mapping = aes(x = year, y = recent_latinx_ratio, color = "Latinx Ratio")) +
