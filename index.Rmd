@@ -21,9 +21,11 @@ King County was selected for this project for its  diversity. While it varies de
 
 ### Summary Information:
 
-To start, I analyzed ratios of incarcerated populations of a given racial demographic to their overall population in King County in the year 2018. I wanted to see how inconsistent the proportion of incarcerated people would be across different racial groups in a fairly diverse county, especially one that preaches its progressiveness. In doing so, I found that among Asian Americans and Pacific Islanders, the ratio was `recent_aapi_ratio`. For the Latinx community, it was `recent_latinx_ratio`. Native population, `recent_native_ratio`. White population, `recent_white_ratio`. For the Black community, the ratio was `recent_black_ratio`. 
+To start, I analyzed ratios of incarcerated populations of a given racial demographic to their overall population in King County in the year 2018. I wanted to see how inconsistent the proportion of incarcerated people would be across different racial groups in a fairly diverse county, especially one that preaches its progressiveness. In doing so, I found that among Asian Americans and Pacific Islanders, the ratio was `r analysis$recent_aapi_ratio`. For the Latinx community, it was `r analysis$recent_latinx_ratio`. Native population, `r analysis$recent_native_ratio`. White population, `r analysis$recent_white_ratio`. For the Black community, the ratio was `r analysis$recent_black_ratio`. 
 
-The ratio of Black people in incarceration to the total Black population in King County was nearly 5 times that of the White population in King County, and 17 times that of the smallest ratio. In a fair society, we would expect these ratios to be similar across the board. However, the United States continues to grapple with structural racism and inequities in its integrity. 
+The ratio of Black people in incarceration to the total Black population in King County was nearly five times that of the White population in King County, and 17 times that of the smallest ratio. In a fair society, we would expect these ratios to be fairly similar across the board. However, the United States continues to grapple with structural racism and inequities in its integrity. 
+
+These ratios have fluctuated slightly over the last 30 years, but they remain lie in the same area. The ratio of incarcerated Black people in King County remains the highest, followed by that of incarcerated Indigenous people, then Latinx, White, and AAPI. 
 
 
 ```{r echo = F}
