@@ -49,16 +49,13 @@ recent_native_ratio <- incarceration_trends_filtered %>%
 
 
 ggplot(data = incarceration_trends_filtered) +
-  geom_point(mapping = aes(x = year, y = recent_aapi_ratio)) + ylim(0.0, 0.002) 
-
-ggplot(data = incarceration_trends_filtered) +
-  geom_point(mapping = aes(x = year, y = recent_black_ratio)) + ylim(0.0, 0.02)
-
-ggplot(data = incarceration_trends_filtered) +
-  geom_point(mapping = aes(x = year, y = recent_native_ratio)) + ylim(0.0, 0.01)
-
-ggplot(data = incarceration_trends_filtered) +
-  geom_point(mapping = aes(x = year, y = recent_latinx_ratio)) + ylim(0.0, 0.002)
-
-ggplot(data = incarceration_trends_filtered) +
-  geom_point(mapping = aes(x = year, y = recent_white_ratio)) + ylim(0.0, 0.002)
+  geom_line(mapping = aes(x = year, y = recent_white_ratio, color = "White Ratio")) + 
+                          xlim (1990, 2020) + ylim(0.0, 0.015) +
+  geom_line(mapping = aes(x = year, y = recent_latinx_ratio, color = "Latinx Ratio")) +
+  geom_line(mapping = aes(x = year, y = recent_native_ratio, color = "Native Ratio")) +
+  geom_line(mapping = aes(x = year, y = recent_black_ratio, color = "Black Ratio")) +
+  geom_line(mapping = aes(x = year, y = recent_aapi_ratio, color = "AAPI Ratio")) +
+  ggtitle("Changes in Incarceration Rates Among Racial Groups", subtitle = "From 1990 to 2018") +
+  xlab('Year') +
+  ylab('Ratio of Incarcerated Racial Population to Total Racial Population') 
+  
