@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 source("analysis.R")
 source("trends_graph.R")
 source("var_compar.R")
+source("map.R")
 ```
 ---
 
@@ -50,4 +51,12 @@ var_compar_graph
 The population to incarcerated population graphs for AAPI, Black, Indigenous, and White communities in King County all show a gradual linear increase. This is fair to expect, because as the population grows, the incarcerated population might increase with it. However, for the Latinx community, just as the population reaches 50,000 people, the incarcerated population jumps four-fold, and then seven and nine-fold before the population even grows to 75,000.  These are such large jumps, and they are only characteristic to the Latinx community in King County. It makes me wonder what is going on, because I can't imagine this occurring organically. 
 
 ---
+### Map:
+```{r echo = F}
+incar_map
+```
+
+Featured is a chart of Washington state with all of its counties. The color scale refers to the total incarcerated population in each county. The larger the population, the darker the color. As we can see, King County has the highest count of incarcerated people. While this is alarming, it should be recognized that King County is the largest county in the state. Moving outside of King County, the county population drops, and so does the the number of people in jails. 
+
+
 
