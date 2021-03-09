@@ -1,5 +1,7 @@
 ---
 title: "Incarceration Across King County, Washington"
+author: "Christine Nguyen"
+date: "Info 201 AD - Winter Quarter 2021"
 output: html_document
 ---
 
@@ -14,7 +16,7 @@ source("map.R")
 
 ### Introduction:
 
-The primary incarceration data and trends used for this project was gathered by the Vera Institute of Justice from two primary sources: the Bureau of Justice Statistics and the Annual Survey of Jails. This data has since been manipulated and reduced to showcase underlying trends within
+The primary incarceration data and trends used for this project was gathered by the Vera Institute of Justice from two primary sources: the Bureau of Justice Statistics and the Annual Survey of Jails. All the data sources can be found at https://github.com/vera-institute/incarceration-trends. The data in this project has since been manipulated and reduced to showcase underlying trends within
 King County, Washington. 
 
 King County was selected for this project for its  diversity. While it varies depending on the location within the county, the general diversity and associated incarceration trends can serve as an example for what might found in other U.S. metropolitan areas. 
@@ -34,9 +36,10 @@ In attempts to adjust for confounding variables, I pulled  ratios of the incarce
 --- 
 
 ### Showcasing Trends:
-```{r echo = F}
+```{r echo = F, warning = FALSE}
 trends_graph
 ```
+
 This graph shows the changes in ratios of an incarcerated racial group to its entire population in King County. It's fair to assume none of the trend lines will ever be straight across, but it's interesting to see how they change over the years. Some linger in the same range while others show peaks that coincide with that of other racial groups. By showcasing the trend lines on one graph, we can see how they differ from each other and how they change over time. It raises questions of why some peak and others don't, and what events those peaks align with. These are questions that have yet to be answered by data, and perhaps with further research, we can come to an answer. 
 
 For example, the ratios for AAPI and White communities are generally stagnant and are consistent throughout the years. However, mng Black, Indigenous, and Latinx communities, those ratios are significantly higher and experience peaks together around the mid-1990's, early 2000's, and early 2010's. These peaks may coincide with times of economic distress or societal disorder. Again, further research must be conducted, but we hope to find answers to illuminate these areas of question. 
@@ -44,15 +47,16 @@ For example, the ratios for AAPI and White communities are generally stagnant an
 --- 
 
 ### Showcasing Relationships:
-```{r echo = F}
+```{r echo = F, warning = FALSE}
 var_compar_graph
 ```
+
 
 The population to incarcerated population graphs for AAPI, Black, Indigenous, and White communities in King County all show a gradual linear increase. This is fair to expect, because as the population grows, the incarcerated population might increase with it. However, for the Latinx community, just as the population reaches 50,000 people, the incarcerated population jumps four-fold, and then seven and nine-fold before the population even grows to 75,000.  These are such large jumps, and they are only characteristic to the Latinx community in King County. It makes me wonder what is going on, because I can't imagine this occurring organically. 
 
 ---
 ### Map:
-```{r echo = F}
+```{r echo = F, warning = FALSE}
 incar_map
 ```
 
